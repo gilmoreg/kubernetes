@@ -1,6 +1,5 @@
 install:
-	sudo sh ./scripts/install.sh
-	sh ./scripts/configure.sh
+	sh ./scripts/install.sh
 
 helm:
 	sh ./scripts/helm.sh
