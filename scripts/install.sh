@@ -1,8 +1,8 @@
 #!/bin/bash
 snap install microk8s --classic
-microk8s.status --wait-ready
-microk8s.kubectl get nodes
-microk8s.kubectl get services
 sudo snap alias microk8s.kubectl kubectl
+microk8s.status --wait-ready
+kubectl get nodes
+kubectl get services
 microk8s.enable dns ingress
 sudo iptables -P FORWARD ACCEPT
